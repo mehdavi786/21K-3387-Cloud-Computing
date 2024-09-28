@@ -1,0 +1,96 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Cloud Computing Models";
+}
+<style>
+    h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        color: #2980b9;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .model-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .model {
+        flex: 1 1 300px;
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+        .model h2 {
+            margin-top: 0;
+        }
+
+        .model ul {
+            margin-bottom: 0;
+        }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Cloud computing models define the way cloud services are deployed and delivered to users. Here are the main cloud computing models:</p>
+
+<div class="model-container">
+    <div class="model">
+        <h2>1. Service Models</h2>
+        <p>These models describe the type of service offered by cloud providers:</p>
+        <ul>
+            <li><strong>Infrastructure as a Service (IaaS):</strong> Provides virtualized computing resources over the internet.</li>
+            <li><strong>Platform as a Service (PaaS):</strong> Offers a platform for developers to build, run, and manage applications.</li>
+            <li><strong>Software as a Service (SaaS):</strong> Delivers software applications over the internet.</li>
+            <li><strong>Function as a Service (FaaS):</strong> Allows execution of individual functions in the cloud.</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h2>2. Deployment Models</h2>
+        <p>These models define how cloud services are made available to users:</p>
+        <ul>
+            <li><strong>Public Cloud:</strong> Services are provided by third-party providers and available to anyone.</li>
+            <li><strong>Private Cloud:</strong> Cloud infrastructure is operated solely for a single organization.</li>
+            <li><strong>Hybrid Cloud:</strong> Combines public and private clouds, allowing data and applications to be shared between them.</li>
+            <li><strong>Community Cloud:</strong> Infrastructure is shared by several organizations with common concerns.</li>
+        </ul>
+    </div>
+
+    <div class="model">
+        <h2>3. Architecture Models</h2>
+        <p>These models describe the structure and components of cloud systems:</p>
+        <ul>
+            <li><strong>Microservices:</strong> Applications are built as a collection of small, independent services.</li>
+            <li><strong>Serverless:</strong> Allows building and running applications without managing servers.</li>
+            <li><strong>Containers:</strong> Packages application code with dependencies for easy deployment.</li>
+            <li><strong>Service-Oriented Architecture (SOA):</strong> Organizes software components to provide services to other components.</li>
+        </ul>
+    </div>
+</div>
+
+<br />
+
+<h2>Choosing the Right Model</h2>
+<p>The choice of cloud computing model depends on various factors:</p>
+<ul>
+    <li>Business requirements and goals</li>
+    <li>Security and compliance needs</li>
+    <li>Scalability and flexibility requirements</li>
+    <li>Budget constraints</li>
+    <li>Existing IT infrastructure and expertise</li>
+</ul>
+
+<p>Organizations often use a combination of these models to create a cloud strategy that best suits their needs. As cloud technology evolves, new models and variations continue to emerge, offering more specialized and optimized solutions for different use cases.</p>

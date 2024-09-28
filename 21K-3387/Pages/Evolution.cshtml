@@ -1,0 +1,156 @@
+﻿@page
+@model _21K_3387.Pages.EvolutionModel
+@{
+    ViewData["Title"] = "Evolution";
+}
+<h1>@ViewData["Title"]</h1>
+
+<style>
+    h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+    h2 {
+        color: #2980b9;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #3498db;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+    }
+    .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: #ecf0f1;
+        border: 4px solid #3498db;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        left: 50%;
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #ecf0f1;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #ecf0f1;
+    }
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid #ecf0f1;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #ecf0f1 transparent transparent;
+    }
+    .right::after {
+        left: -10px;
+    }
+    .content {
+        padding: 20px 30px;
+        background-color: #ecf0f1;
+        position: relative;
+        border-radius: 6px;
+    }
+</style>
+
+<p>The evolution of cloud computing has been a journey of technological advancements and changing business needs. Here's a timeline of key developments:</p>
+
+<div class="timeline">
+    <div class="timeline-item left">
+        <div class="content">
+            <h2>1960s</h2>
+            <p>The concept of time-sharing, a precursor to cloud computing, is developed. It allows multiple users to access a central computer.</p>
+        </div>
+    </div>
+    <div class="timeline-item right">
+        <div class="content">
+            <h2>1990s</h2>
+            <p>Telecommunications companies begin offering virtualized private network connections, laying the groundwork for modern cloud infrastructure.</p>
+        </div>
+    </div>
+    <div class="timeline-item left">
+        <div class="content">
+            <h2>1999</h2>
+            <p>Salesforce launches, pioneering the concept of delivering enterprise applications via a simple website.</p>
+        </div>
+    </div>
+    <div class="timeline-item right">
+        <div class="content">
+            <h2>2002</h2>
+            <p>Amazon Web Services (AWS) is founded, offering a suite of cloud-based services including storage and computation.</p>
+        </div>
+    </div>
+    <div class="timeline-item left">
+        <div class="content">
+            <h2>2006</h2>
+            <p>Amazon launches Elastic Compute Cloud (EC2), allowing users to rent virtual computers to run their own applications.</p>
+        </div>
+    </div>
+    <div class="timeline-item right">
+        <div class="content">
+            <h2>2008</h2>
+            <p>Google App Engine is released, providing a platform for developing and hosting web applications in Google-managed data centers.</p>
+        </div>
+    </div>
+    <div class="timeline-item left">
+        <div class="content">
+            <h2>2010</h2>
+            <p>Microsoft Azure, originally announced in 2008, becomes commercially available.</p>
+        </div>
+    </div>
+    <div class="timeline-item right">
+        <div class="content">
+            <h2>2011 onwards</h2>
+            <p>Cloud computing gains widespread adoption. New technologies like containers and serverless computing emerge, further evolving the cloud landscape.</p>
+        </div>
+    </div>
+</div>
+
+<h2>Current Trends</h2>
+<ul>
+    <li>Multi-cloud and hybrid cloud strategies</li>
+    <li>Edge computing integration</li>
+    <li>AI and machine learning as cloud services</li>
+    <li>Increased focus on cloud security and compliance</li>
+</ul>
+
+<p>The evolution of cloud computing continues, with ongoing innovations shaping the future of technology and business operations.</p>
